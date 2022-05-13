@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
+
 body,
 html {
   margin: 0;
@@ -11,6 +21,7 @@ html {
 
 body {
   padding: 0;
+  font-family: "GlacialIndifference";
 }
 /* header */
 header {
@@ -69,7 +80,6 @@ nav {
 
 /*  <!-- section 1 --> */
 .first-page {
-  border: 1px solid black;
   margin-top: -120px;
   background-color: #e1decd;
   display: flex;
@@ -138,7 +148,7 @@ nav {
 }
 
 .main-div {
-  background-color: #6F7071;
+  background-color: #6f7071;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -148,7 +158,7 @@ nav {
 }
 
 .background-div {
-  background-color: #F2F4F5;
+  background-color: #f2f4f5;
   width: 70%;
   height: 90%;
   position: absolute;
@@ -187,49 +197,196 @@ nav {
   border: none;
 }
 
-
 /* SECTION 3 */
 
-.section-three{
+.section-three {
   padding: 80px 18%;
   text-align: center;
-  font-family: 'GlacialIndifference';
+  font-family: "GlacialIndifference";
 }
 
-.section-three > p{
-  color: #2ED279;
+.section-three > p {
+  color: #2ed279;
   font-size: 12px;
 }
 
-.section-three > h1{
+.section-three > h1 {
   font-size: 70px;
   font-weight: 600;
 }
 
-.third-section-container{
+.third-section-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   row-gap: 85px;
   padding: 60px 0;
+  padding-bottom: 15px;
 }
 
-.third-section-container > div{
+.third-section-container > div {
   display: flex;
   gap: 15px;
 }
 
-.grid-content-div{
+.grid-content-div {
   text-align: start;
 }
 
-.grid-content-div > h3{
+.grid-content-div > h3 {
   margin-bottom: 20px;
   font-size: 26px;
-  
 }
 
-.grid-content-div > p{
+.grid-content-div > p {
   font-size: large;
   line-height: 1.5;
+}
+
+/* SECTION 4 */
+
+.section-four {
+  height: 585px;
+  background-color: #ccc;
+  padding: 0 20%;
+}
+
+.section-four > div {
+  background-color: rgb(231, 231, 231);
+}
+
+.section-four-img-div {
+  width: 380px;
+  height: 585px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay-div {
+  position: absolute;
+  width: 93%;
+  height: 90%;
+  background-color: #ee3365e3;
+  top: 2%;
+  left: 3.5%;
+  color: white;
+  width: 90%;
+  padding: 74% 5%;
+  text-align: center;
+  font-family: "GlacialIndifference";
+}
+
+.overlay-div h1 {
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.overlay-div h3 {
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.overlay-div > div > img {
+  margin: 0 10px;
+}
+
+.section-four-img-div > img {
+  width: 110%;
+  height: 110%;
+  margin-top: -5%;
+  margin-left: -5%;
+  object-fit: cover;
+  display: block;
+}
+
+/* SECTION 5 */
+
+.section-five {
+  text-align: center;
+  padding: 130px 20%;
+  background-color: khaki;
+}
+
+.section-five > p {
+  color: #2ed279;
+}
+
+.section-five > h1 {
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+.section-five > ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Mulish";
+  width: 50%;
+  margin: auto;
+  
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.grid-container {
+  margin: 50px 0;
+  display: grid;
+  grid-template:
+    "tl tl tr" 550px
+    "ml mr mr" 550px
+    "bl bl br" 550px / 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+
+
+.grid-tl {
+  grid-area: tl;
+  background-color: wheat;
+}
+.grid-tr {
+  grid-area: tr;
+  background-color: white;
+}
+.grid-ml {
+  grid-area: ml;
+  background-color: #ee3364;
+}
+.grid-mr {
+  grid-area: mr;
+  background-color: aquamarine;
+}
+.grid-bl {
+  grid-area: bl;
+  background-color: dodgerblue;
+}
+.grid-br {
+  grid-area: br;
+  background-color: burlywood;
+}
+
+.grid-container > div{
+  text-align: start;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+  position: relative;
+}
+
+.grid-container > div > div{
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.grid-container > div h2{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.section-five > button {
+  margin: 10px 0;
+  background-color: #ee3364;
+  padding: 22px 60px;
+  color: white;
 }
